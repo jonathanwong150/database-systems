@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OL</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.css">
+    <style>
+        #map { width: 100%; height: 500px; } /* Ensure the map has a size */
+    </style>
+</head>
+<body>
+    <div id="map"></div> <!-- Map container must be declared before your script -->
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sample Points - Replace with your actual points
+            const points = [
+                [-118.28264336622074,34.01700131684765],
+                [-118.28311082321726,34.01941930365084],
+                [-118.28513450000275,34.020227780597395],
+                [-118.28550932241795,34.0204314105591],
+                [-118.28726174006398,34.024933964560226],
+                [-118.28530149797905,34.025389765836394],
+                [-118.28255421376139,34.021356318061926],
+                [-118.2832722280872,34.02136598257189],
+                [-118.28560721635613,34.01979117949461],
+                [-118.28667453975888,34.02002051629859],
+                [-118.28723739747706,34.02024317452357],
+                [-118.2880169064912,34.020142742607554],
+                [-118.29184824125795,34.022325733070964]
+            ];
+
+            // Store the points in localStorage
+            localStorage.setItem('myPoints', JSON.stringify(points));
+
+            // Read points from localStorage
+            const storedPoints = JSON.parse(localStorage.getItem('myPoints'));
+
+            // Initialize OpenLayers map
+            const map = new ol.Map({
+                target: 'map', // The DOM element to target
+                layers: [
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM() // OpenStreetMap base layer
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([-118.283, 34.019]), // Center of the map
+                    zoom: 12 // Initial zoom level
+                })
+            });
+
+            // Add points to the map
+            storedPoints.forEach(function(coord) {
+                let feature = new ol.Feature({
+                    geometry: new ol.geom.Point(ol.proj.fromLonLat(coord))
+                });
+
+                let layer = new ol.layer.Vector({
+                    source: new ol.source.Vector({
+                        features: [feature]
+                    })
+                });
+
+                map.addLayer(layer);
+            });
+        });
+    </script>
+</body>
+</html>

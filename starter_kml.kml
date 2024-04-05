@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+    <IconStyle>
+        <Icon>
+            <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+        </Icon>
+    </IconStyle>
+</Style>
+
+<Placemark>
+    <name>Chipotle</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28264336622074,34.01700131684765</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Taco Bell</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.29184824125795,34.022325733070964</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Marshall Ftn</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28311082321726,34.01941930365084</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Traveler Ftn</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28513450000275,34.020227780597395</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Tommy Trojan</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28550932241795,34.0204314105591</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>McClintock Th</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28726174006398,34.024933964560226</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Village Ftn</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28530149797905,34.025389765836394</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Birnkrant SB</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28255421376139,34.021356318061926</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Blue Lt Leavey</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.2832722280872,34.02136598257189</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Hancock Fdn</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28560721635613,34.01979117949461</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>TCC Blue Light</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28667453975888,34.02002051629859</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Hazel and Stanley</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.28723739747706,34.02024317452357</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Vivian Hall</name>
+    <styleUrl>#z1</styleUrl>
+    <Point>
+        <coordinates>-118.2880169064912,34.020142742607554</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+  <name>Convex Hull</name>
+  <Style>
+    <LineStyle>
+      <color>#ff0000ff</color> 
+      <width>2</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>#4dff0000</color> 
+    </PolyStyle>
+  </Style>
+  <Polygon>
+    <altitudeMode>relativeToGround</altitudeMode> 
+    <outerBoundaryIs>
+      <LinearRing>
+        <coordinates>
+          -118.28264336622074,34.01700131684765
+          -118.29699421393713,34.023621064714085
+          -118.28530149797905,34.025389765836394
+          -118.28255421376139,34.021356318061926
+          -118.28264336622074,34.01700131684765
+        </coordinates>
+      </LinearRing>
+    </outerBoundaryIs>
+  </Polygon>
+</Placemark> 
+
+<Placemark>
+  <name>Line to Neighbor 1</name>
+  <LineString>
+    <coordinates>
+      -118.29699421393713,34.023621064714085 -118.2880169064912,34.020142742607554
+    </coordinates>
+  </LineString>
+</Placemark>
+
+<Placemark>
+  <name>Line to Neighbor 2</name>
+  <LineString>
+    <coordinates>
+      -118.29699421393713,34.023621064714085 -118.28723739747706,34.02024317452357
+    </coordinates>
+  </LineString>
+</Placemark>
+
+<Placemark>
+  <name>Line to Neighbor 3</name>
+  <LineString>
+    <coordinates>
+      -118.29699421393713,34.023621064714085 -118.28667453975888,34.02002051629859
+    </coordinates>
+  </LineString>
+</Placemark>
+
+<Placemark>
+  <name>Line to Neighbor 4</name>
+  <LineString>
+    <coordinates>
+      -118.29699421393713,34.023621064714085 -118.28726174006398,34.024933964560226
+    </coordinates>
+  </LineString>
+</Placemark>
+
+</Document></kml>  
